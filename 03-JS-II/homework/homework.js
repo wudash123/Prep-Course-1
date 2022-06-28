@@ -102,6 +102,8 @@ function estaEnRango(numero) {
   if(numero<50 && numero>20) return true;
   else return false;
 
+  //return numero<50 && numero>20;
+
 }
 
 function esEntero(numero) {
@@ -116,6 +118,8 @@ function esEntero(numero) {
   if(Number.isInteger(numero)) return true;
   else return false;
   //AQUI
+  //return numero %1===0;
+
 }
 
 function fizzBuzz(numero) {
@@ -173,7 +177,19 @@ function esPrimo(numero) {
   }
 
 }
-//AQUI
+/*
+
+  if(numero<2){
+    return false
+  }
+  for(var i=2; i<numero; i++){
+    if(numero%i===0){
+      return false
+    }
+  }
+  return true
+
+*/ 
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
@@ -212,6 +228,14 @@ function tieneTresDigitos(numero){
   }
   
 }
+/*
+  if(numero>99 && numero <1000){
+    return true
+  }else{
+    return false
+  }
+
+*/
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
